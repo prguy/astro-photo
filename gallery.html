@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vatus Art</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/rocket-logoa.jpg" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Gallery</h1>
+    </section>
+
+    <!-- ------ Gallery Content -->
+
+    <section class="photos">
+      <!-- shop -->
+      <h1>ASTRO PHOTOGRAPHY</h1>
+      <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p> -->
+
+      <div class="photo-col">
+        <!-- shop-col -->
+        <img src="images/Abell 2065.jpg" />
+        <h3>Abell</h3>
+        <p>
+          Abell 2065 - The Corona Borealis Galaxy Cluster. The cluster lies at a
+          distance of 1 billion light-years according to Hubble in the
+          constellation Corona Borealis, the Northern Crown. To give you an
+          indication of the speed of light, 1 light second equals roughly the
+          distance from San Francisco to new York and back, 30 times a second. I
+          can't fathom the enormous distance light travels in in one billion
+          years.
+        </p>
+      </div>
+      <div class="photo-col">
+        <img src="images/Calif neb ngc1499.jpg" />
+        <h3>California Nebula</h3>
+        <p>
+          The California Nebula is a huge cloud of hydrogen gas called an H-II
+          region. It is located 2000 light-years from us. The gas is excited by
+          the bright star in the picture. Visually this emission nebula is very
+          difficult to observe, even with large telescopes, because it's dim
+          light is spread over an area four times the diameter of the full moon.
+          The picture composed of 75-5 minute exposure, over several nights.
+        </p>
+      </div>
+      <div class="photo-col">
+        <img src="images/IC 5070.jpg" />
+        <h3>IC 5070</h3>
+        <p>
+          IC 5070 - The Pelican Nebula is part of a huge H-II cloud of hydrogen
+          gas, energized by nearby luminous stars and then emits its own light
+          at the red wavelength of hydrogen. It is located at a distance of 1500
+          light-years in the constellation Cygnus the Swan, in our own galaxy,
+          the Milky Way.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
+        recusandae id provident error! <br />
+        Non molestias vitae nulla sed neque sit.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by PR</p>
+    </section>
+
+    <!-- Javascript for toggle menu -->
+    <script>
+      var navLinks = document.getElementById('navLinks');
+      function showMenu() {
+        navLinks.style.right = '0';
+      }
+      function hideMenu() {
+        navLinks.style.right = '-200px';
+      }
+    </script>
+  </body>
+</html>
